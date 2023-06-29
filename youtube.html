@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <a href="https://www.youtube.com/">
+          <img class="youtube-logo" src="icons/youtube-logo.svg" />
+        </a>
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- out position absolute inside position:relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+            <div class="notifications-count">3</div>
+            <div class="tooltip">notifications</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-pictures/my-channel.jpg"
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=O0srjKOOR4g&t=2s">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+          </a>
+            <div class="video-time">14:20</div>
+          </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@LinusTechTips">
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-1.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=O0srjKOOR4g&t=2s"
+                >
+                  I’m actually getting MAD now. – RTX 4060 Review
+                </a>
+              </p>
+
+              <p class="video-author">
+                <a
+                  class="channel-link"
+                  href="https://www.youtube.com/@LinusTechTips"
+                  >Linus Tech Tips</a
+                >
+              </p>
+              <p class="video-stats">130k views &#183; 44 minutes ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=q6zhos-TcNA&t=2855s">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+            </a>
+            <div class="video-time">1:05:33</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@A2DChannel/videos">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-2.jpeg"
+              />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=q6zhos-TcNA&t=2855s">
+                URUTTU TECH (2023) - Full Movie (Tamil) Full HD 60fps | Uruttu
+                Annan, PC Doc, Kelu Mavaney Kelu
+              </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@A2DChannel/videos">
+                  A2D Channel</p>
+                </a>
+              <p class="video-stats">1.5M views &#183; 6 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ybwB35-5wz4">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+            </a>
+            <div class="video-time">8:33</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a class="channel-link" href="https://www.youtube.com/@RishiPediaOfficial">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-3.jpeg"
+              />
+            </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=ybwB35-5wz4">
+                The Details In Delhi Family Horror You Missed!! | RishiPedia |
+                RishGang | Tamil
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@RishiPediaOfficial">
+                RishiPedia
+                </a>
+              </p>
+              <p class="video-stats">1.3M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=1yISksJYCGc">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+            </a>    
+            <div class="video-time">8:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@lmesacademy">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-4.jpeg"
+              />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=1yISksJYCGc">
+                  Hitler's Dream Project Volkswagen | Hitler's Tech | Ep #3 |
+                  Tamil | LMES
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@lmesacademy">
+                  Let's Make Education Simple
+                </a>
+              </p>
+              <p class="video-stats">160k views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=eLDvm9czyBQ">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+            </a>
+            <div class="video-time">6:51</div>
+          </div>
+          <div class="video-info-grid">           
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@Mrwhosetheboss">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-5.jpeg"
+              />
+            </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=eLDvm9czyBQ">
+                The Greatest Smartphone Gadget of All Time?
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="//www.youtube.com/@Mrwhosetheboss">
+                  Mrwhosetheboss
+                </a> 
+              </p>
+              <p class="video-stats">947K views &#183; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=LyYSO5m4k2g">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+            </a>
+            <div class="video-time">13:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@irfansview1">
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-6.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=LyYSO5m4k2g">
+                  Skiing in Kashmir ⛷ - Irfan’s view
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@irfansview1">
+                  Irfan's view
+                </a> 
+              </p>
+              <p class="video-stats">29k views &#183; 4 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=yRUUEWQxeEM">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp" />
+            </a>
+            <div class="video-time">10:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@outoffocus">
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-7.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=yRUUEWQxeEM">
+                  Non-Newtonian fluid vs Bomb 😱❗| Unexpected Explosion 🏃‍♂💥 |
+                  Out of Focus
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@outoffocus"> 
+                  Out of Focus
+                </a>
+              </p>
+              <p class="video-stats">5.2k views &#183; 1 hour ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=TJ2ifmkGGus&vl=en">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.webp" />
+          </a>
+            <div class="video-time">8:00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+                <a href="https://www.youtube.com/@MrBeast">
+                  <img
+                    class="profile-picture"
+                    src="channel-pictures/channel-8.jpeg"
+                  />
+                </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=TJ2ifmkGGus&vl=en">
+                  1,000 Blind People See For The First Time
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@MrBeast"> 
+                  MrBeast
+                </a>
+              </p>
+              <p class="video-stats">148M views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=kvN5_GXlg2Y">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.webp" />
+            </a>
+            <div class="video-time">9:55</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@mkbhd">
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-9.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=kvN5_GXlg2Y">
+                  Apple's Forbidden Words
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@mkbhd">
+                  Marques Brownlee
+                </a>
+              </p>
+              <p class="video-stats">2.9M views &#183; 12 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=SBmSRK3feww">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.webp" />
+            </a>
+            <div class="video-time">11:57:21</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@SuperSimpleDev">
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-10.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=SBmSRK3feww">
+                  JavaScript Full Course (2023) - Beginner to Pro - Part 1
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@SuperSimpleDev">
+                  SuperSimpleDev
+                </a>
+              </p>
+              <p class="video-stats">876k views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=bGqFQ9_r18I">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.webp" />
+            </a>
+            <div class="video-time">11:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@Hagerty">
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-11.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=bGqFQ9_r18I">
+                  World's Quickest SUVs: Rivian R1S vs Aston DBX 707 vs Cayenne
+                  Turbo GT — Cammisa's Drag Race Replay
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@Hagerty">
+                  Hagerty
+                </a>
+              </p>
+              <p class="video-stats">1.1M views &#183; 5 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=M4vYng4Fvuk">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.webp" />
+            </a>
+            <div class="video-time">14:30</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@madangowri">
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-12.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a class="video-link" href="https://www.youtube.com/watch?v=M4vYng4Fvuk">
+                  Russia - THE END?! 🔥 | Madan Gowri | MG
+                </a>
+              </p>
+              <p class="video-author">
+                <a class="channel-link" href="https://www.youtube.com/@madangowri">
+                  Madan Gowri
+                </a>
+              </p>
+              <p class="video-stats">458k views &#183; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
